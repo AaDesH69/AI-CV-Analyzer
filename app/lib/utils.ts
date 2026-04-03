@@ -1,3 +1,10 @@
+import clsx, {type ClassValue} from "clsx";
+import {twMerge} from "tailwind-merge";
+
+export function cn(...input: ClassValue[]){
+    return twMerge( clsx())
+}
+
 export function formatSize(bytes: number): string {
     if (bytes === 0) return '0 Bytes';
 
