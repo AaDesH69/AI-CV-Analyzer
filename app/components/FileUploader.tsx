@@ -31,6 +31,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
         <div className="w-full gradient-border">
             <div {...getRootProps()}>
                 <input {...getInputProps()} />
+
                 <div className="space-y-4 cursor-pointer">
                     {file ? (
                         <div className="uploader-selected-file" onClick={(e) => e.stopPropagation()}>
@@ -45,7 +46,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                                     </p>
                                 </div>
                             </div>
-                            <button className="p-2 cursor-pointer" onClick={(e) =>{
+                            <button className="p-2 cursor-pointer" onClick={(e) => {
                                 onFileSelect?.(null)
                             }}>
                                 <img src="/icons/cross.svg" alt="remove" className="w-4 h-4"/>

@@ -32,7 +32,6 @@ export default function Home() {
         <h2>Review Your Cv with AI-powered Feedback</h2>
       </div>
 
-
         {resumes.length > 0 && (
             <div className="resumes-section">
                 {resumes.map((resume) => (
@@ -41,9 +40,5 @@ export default function Home() {
             </div>
         )}
     </section>
-
-
-
-
     </main>
 }
